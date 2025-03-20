@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "GkXTf1CEjAA=",
+  "success": true,
+  "projectFilePath": "/Users/miguelbtcode/Cursos/dotnet/clean-architecture-1/src/CleanArchitecture/CleanArchitecture.Domain/CleanArchitecture.Domain.csproj",
+  "expectedPackageFiles": [
+    "/Users/miguelbtcode/.nuget/packages/mediatr.contracts/2.0.1/mediatr.contracts.2.0.1.nupkg.sha512"
+  ],
+  "logs": []
+}
