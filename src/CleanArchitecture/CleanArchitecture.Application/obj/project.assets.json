@@ -336,19 +336,19 @@
     ]
   },
   "packageFolders": {
-    "/Users/miguelbtcode/.nuget/packages/": {}
+    "/Users/miguelbarreto/.nuget/packages/": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/miguelbtcode/Cursos/dotnet/clean-architecture-1/src/CleanArchitecture/CleanArchitecture.Application/CleanArchitecture.Application.csproj",
+      "projectUniqueName": "/Users/miguelbarreto/GithubProjects/dotnet-clean-architecture-1/src/CleanArchitecture/CleanArchitecture.Application/CleanArchitecture.Application.csproj",
       "projectName": "CleanArchitecture.Application",
-      "projectPath": "/Users/miguelbtcode/Cursos/dotnet/clean-architecture-1/src/CleanArchitecture/CleanArchitecture.Application/CleanArchitecture.Application.csproj",
-      "packagesPath": "/Users/miguelbtcode/.nuget/packages/",
-      "outputPath": "/Users/miguelbtcode/Cursos/dotnet/clean-architecture-1/src/CleanArchitecture/CleanArchitecture.Application/obj/",
+      "projectPath": "/Users/miguelbarreto/GithubProjects/dotnet-clean-architecture-1/src/CleanArchitecture/CleanArchitecture.Application/CleanArchitecture.Application.csproj",
+      "packagesPath": "/Users/miguelbarreto/.nuget/packages/",
+      "outputPath": "/Users/miguelbarreto/GithubProjects/dotnet-clean-architecture-1/src/CleanArchitecture/CleanArchitecture.Application/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "/Users/miguelbtcode/.nuget/NuGet/NuGet.Config"
+        "/Users/miguelbarreto/.nuget/NuGet/NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net8.0"
@@ -360,8 +360,8 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "projectReferences": {
-            "/Users/miguelbtcode/Cursos/dotnet/clean-architecture-1/src/CleanArchitecture/CleanArchitecture.Domain/CleanArchitecture.Domain.csproj": {
-              "projectPath": "/Users/miguelbtcode/Cursos/dotnet/clean-architecture-1/src/CleanArchitecture/CleanArchitecture.Domain/CleanArchitecture.Domain.csproj"
+            "/Users/miguelbarreto/GithubProjects/dotnet-clean-architecture-1/src/CleanArchitecture/CleanArchitecture.Domain/CleanArchitecture.Domain.csproj": {
+              "projectPath": "/Users/miguelbarreto/GithubProjects/dotnet-clean-architecture-1/src/CleanArchitecture/CleanArchitecture.Domain/CleanArchitecture.Domain.csproj"
             }
           }
         }
@@ -414,7 +414,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/8.0.302/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/8.0.407/PortableRuntimeIdentifierGraph.json"
       }
     }
   }

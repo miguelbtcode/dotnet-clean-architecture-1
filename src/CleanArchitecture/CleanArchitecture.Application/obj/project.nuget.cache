@@ -1,16 +1,16 @@
 {
   "version": 2,
-  "dgSpecHash": "XmTXVrJeKIg=",
+  "dgSpecHash": "gGAb0EyWU+I=",
   "success": true,
-  "projectFilePath": "/Users/miguelbtcode/Cursos/dotnet/clean-architecture-1/src/CleanArchitecture/CleanArchitecture.Application/CleanArchitecture.Application.csproj",
+  "projectFilePath": "/Users/miguelbarreto/GithubProjects/dotnet-clean-architecture-1/src/CleanArchitecture/CleanArchitecture.Application/CleanArchitecture.Application.csproj",
   "expectedPackageFiles": [
-    "/Users/miguelbtcode/.nuget/packages/dapper/2.1.15/dapper.2.1.15.nupkg.sha512",
-    "/Users/miguelbtcode/.nuget/packages/fluentvalidation/11.8.0/fluentvalidation.11.8.0.nupkg.sha512",
-    "/Users/miguelbtcode/.nuget/packages/fluentvalidation.dependencyinjectionextensions/11.8.0/fluentvalidation.dependencyinjectionextensions.11.8.0.nupkg.sha512",
-    "/Users/miguelbtcode/.nuget/packages/mediatr/12.1.1/mediatr.12.1.1.nupkg.sha512",
-    "/Users/miguelbtcode/.nuget/packages/mediatr.contracts/2.0.1/mediatr.contracts.2.0.1.nupkg.sha512",
-    "/Users/miguelbtcode/.nuget/packages/microsoft.extensions.dependencyinjection.abstractions/8.0.0-rc.2.23479.6/microsoft.extensions.dependencyinjection.abstractions.8.0.0-rc.2.23479.6.nupkg.sha512",
-    "/Users/miguelbtcode/.nuget/packages/microsoft.extensions.logging.abstractions/8.0.0-rc.2.23479.6/microsoft.extensions.logging.abstractions.8.0.0-rc.2.23479.6.nupkg.sha512"
+    "/Users/miguelbarreto/.nuget/packages/dapper/2.1.15/dapper.2.1.15.nupkg.sha512",
+    "/Users/miguelbarreto/.nuget/packages/fluentvalidation/11.8.0/fluentvalidation.11.8.0.nupkg.sha512",
+    "/Users/miguelbarreto/.nuget/packages/fluentvalidation.dependencyinjectionextensions/11.8.0/fluentvalidation.dependencyinjectionextensions.11.8.0.nupkg.sha512",
+    "/Users/miguelbarreto/.nuget/packages/mediatr/12.1.1/mediatr.12.1.1.nupkg.sha512",
+    "/Users/miguelbarreto/.nuget/packages/mediatr.contracts/2.0.1/mediatr.contracts.2.0.1.nupkg.sha512",
+    "/Users/miguelbarreto/.nuget/packages/microsoft.extensions.dependencyinjection.abstractions/8.0.0-rc.2.23479.6/microsoft.extensions.dependencyinjection.abstractions.8.0.0-rc.2.23479.6.nupkg.sha512",
+    "/Users/miguelbarreto/.nuget/packages/microsoft.extensions.logging.abstractions/8.0.0-rc.2.23479.6/microsoft.extensions.logging.abstractions.8.0.0-rc.2.23479.6.nupkg.sha512"
   ],
   "logs": []
 }
