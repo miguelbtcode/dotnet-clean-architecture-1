@@ -17,10 +17,7 @@ public class AlquileresController : ControllerBase
     }
 
     [HttpGet("{id}")]
-    public async Task<IActionResult> GetAlquiler(
-        Guid id,
-        CancellationToken cancellationToken
-    )
+    public async Task<IActionResult> GetAlquiler(Guid id, CancellationToken cancellationToken)
     {
         var query = new GetAlquilerQuery(id);
         var resultado = await _sender.Send(query, cancellationToken);
@@ -29,13 +26,11 @@ public class AlquileresController : ControllerBase
 
     [HttpPost]
     public async Task<IActionResult> ReservaAlquiler(
-        Guid id,
         AlquilerReservaRequest request,
         CancellationToken cancellationToken
     )
     {
-        var command = new ReservarAlquilerCommand
-        (
+        var command = new ReservarAlquilerCommand(
             request.VehiculoId,
             request.UserId,
             request.StartDate,
@@ -49,10 +44,6 @@ public class AlquileresController : ControllerBase
             return BadRequest(resultado.Error);
         }
 
-        return CreatedAtAction(
-            nameof(GetAlquiler),
-            new { id = resultado.Value },
-            resultado.Value
-        );
+        return CreatedAtAction(nameof(GetAlquiler), new { id = resultado.Value }, resultado.Value);
     }
 }

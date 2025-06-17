@@ -20,7 +20,8 @@ public sealed class Alquiler : Entity
         Moneda precioTotal,
         AlquilerStatus status,
         DateTime fechaCreacion
-    ) : base(id)
+    )
+        : base(id)
     {
         VehiculoId = vehiculoId;
         UserId = userId;
@@ -46,7 +47,6 @@ public sealed class Alquiler : Entity
     public DateTime? FechaDenegacion { get; private set; }
     public DateTime? FechaCompletado { get; private set; }
     public DateTime? FechaCancelacion { get; private set; }
-
 
     public static Alquiler Reservar(
         Vehiculo vehiculo,

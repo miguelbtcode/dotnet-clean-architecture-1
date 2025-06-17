@@ -19,7 +19,7 @@ public class PrecioService
                 Accesorio.AppleCar or Accesorio.AndroidCar => 0.05m,
                 Accesorio.AireAcondicionado => 0.01m,
                 Accesorio.Mapas => 0.01m,
-                _ => 0
+                _ => 0,
             };
         }
 
@@ -27,13 +27,11 @@ public class PrecioService
 
         if (percentageChange > 0)
         {
-            accesorioCharges = new Moneda(
-                precioPorPeriodo.Monto * percentageChange,
-                tipoMoneda
-            );
+            accesorioCharges = new Moneda(precioPorPeriodo.Monto * percentageChange, tipoMoneda);
         }
 
-        var precioTotal = Moneda.Zero();
+        var precioTotal = Moneda.Zero(tipoMoneda);
+
         precioTotal += precioPorPeriodo;
 
         if (!vehiculo!.Mantenimiento!.IsZero())

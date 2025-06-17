@@ -8,8 +8,8 @@ using CleanArchitecture.Domain.Vehiculos;
 
 namespace CleanArchitecture.Application.Alquileres.ReservarAlquiler;
 
-internal sealed class ReservarAlquilerCommandHandler :
-    ICommandHandler<ReservarAlquilerCommand, Guid>
+internal sealed class ReservarAlquilerCommandHandler
+    : ICommandHandler<ReservarAlquilerCommand, Guid>
 {
     private readonly IUserRepository _userRepository;
     private readonly IVehiculoRepository _vehiculoRepository;
@@ -24,7 +24,8 @@ internal sealed class ReservarAlquilerCommandHandler :
         IAlquilerRepository alquilerRepository,
         PrecioService precioService,
         IUnitOfWork unitOfWork,
-        IDateTimeProvider dateTimeProvider)
+        IDateTimeProvider dateTimeProvider
+    )
     {
         _userRepository = userRepository;
         _vehiculoRepository = vehiculoRepository;
@@ -36,7 +37,8 @@ internal sealed class ReservarAlquilerCommandHandler :
 
     public async Task<Result<Guid>> Handle(
         ReservarAlquilerCommand request,
-        CancellationToken cancellationToken)
+        CancellationToken cancellationToken
+    )
     {
         var user = await _userRepository.GetByIdAsync(request.UserId, cancellationToken);
 
@@ -45,7 +47,10 @@ internal sealed class ReservarAlquilerCommandHandler :
             return Result.Failure<Guid>(UserErrors.NotFound);
         }
 
-        var vehiculo = await _vehiculoRepository.GetByIdAsync(request.VehiculoId, cancellationToken);
+        var vehiculo = await _vehiculoRepository.GetByIdAsync(
+            request.VehiculoId,
+            cancellationToken
+        );
 
         if (vehiculo is null)
         {
@@ -53,7 +58,11 @@ internal sealed class ReservarAlquilerCommandHandler :
         }
 
         var duracion = DateRange.Create(request.FechaInicio, request.FechaFin);
-        var isOverlapping = await _alquilerRepository.IsOverlappingAsync(vehiculo, duracion, cancellationToken);
+        var isOverlapping = await _alquilerRepository.IsOverlappingAsync(
+            vehiculo,
+            duracion,
+            cancellationToken
+        );
 
         if (isOverlapping)
         {
