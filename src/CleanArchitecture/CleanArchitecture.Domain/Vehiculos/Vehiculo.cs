@@ -15,7 +15,8 @@ public sealed class Vehiculo : Entity
         Moneda mantenimiento,
         DateTime? fechaUltimaAlquiler,
         List<Accesorio> accesorios,
-        Direccion? direccion)
+        Direccion? direccion
+    )
         : base(id)
     {
         Modelo = modelo;

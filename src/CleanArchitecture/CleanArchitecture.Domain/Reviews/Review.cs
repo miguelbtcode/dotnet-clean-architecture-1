@@ -16,7 +16,8 @@ public sealed class Review : Entity
         Rating rating,
         Comentario comentario,
         DateTime fechaCreacion
-    ) : base(id)
+    )
+        : base(id)
     {
         VehiculoId = vehiculoId;
         AlquilerId = alquilerId;

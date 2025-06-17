@@ -10,7 +10,8 @@ public class ExceptionHandlingMiddleware
 
     public ExceptionHandlingMiddleware(
         RequestDelegate next,
-        ILogger<ExceptionHandlingMiddleware> logger)
+        ILogger<ExceptionHandlingMiddleware> logger
+    )
     {
         _next = next;
         _logger = logger;
@@ -31,7 +32,7 @@ public class ExceptionHandlingMiddleware
                 Status = exceptionDetails.Status,
                 Type = exceptionDetails.Type,
                 Title = exceptionDetails.Title,
-                Detail = exceptionDetails.Details
+                Detail = exceptionDetails.Details,
             };
 
             if (exceptionDetails.Errors is not null)
@@ -61,7 +62,7 @@ public class ExceptionHandlingMiddleware
                 "Error de servidor",
                 "Un inesperado error a ocurrido en la aplicacion",
                 null
-            )
+            ),
         };
     }
 
